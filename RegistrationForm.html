@@ -1,53 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Form Activity</title>
+        <title>Registration Form Activity</title>
     </head>
-    <style>
-        h1{
-            font-family: 'Oswald Regular';
-            font-weight: bolder;
-        }
-        form{
-            font-family: 'Oswald Regular';
-            font-weight: 400;
-        }
-        body{
-            background-color: lightslategrey;
-        }
-        div{
-            background-color: white;
-            width: 280px;
-            height: 710px;
-            padding: 20px 20px 20px 20px;
-            margin: 10px auto;
-            border-radius: 5px;
-        }
-        .box{
-            width: 100%;
-        }
-        .GreenButton{
-            width: 100px;
-            height: 25px;
-            background-color: green;
-            color: white;
-            border: 0;
-        }
-        .RedButton{
-            width: 100px;
-            height: 25px;
-            background-color: red;
-            color: white;
-            border: 0;
-        }
-        .dot{
-            margin: 10px 10px 10px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="Registration_style.css">
+    <script src="Registration_js.js"></script>
     <body>
         <div>
-            <form>
             <h1>Registration Form</h1>
+            <p id="message3" style="color:green"></p>
+            <form>
                 First Name:    <br/>
                     <input type="text" class="box" name="firstname"/><br/>
                 Last Name:     <br/>
@@ -57,9 +19,11 @@
                 Email:         <br/>
                     <input type="email" class="box" name="email"/><br/>
                 Password:      <br/>
-                    <input type="password" class="box" name="password"/><br/>
+                    <input type="password" id="password" class="box" name="password"/><br/>
+                    <span id = "message1" style="color:red"></span><br>
                 Date of Birth: <br/>
-                    <input type="date" class="box" name="bday"/><br/>
+                    <input type="date" id="age" class="box" name="bday" value=""/><br/>
+                    <span id = "message2" style="color:red"></span><br>
                 Gender:        <br/>
                     <input type="radio" class="dot" name="male" value="male"/> Male
                     <input type="radio" class="dot" name="female" value="female"/> Female
@@ -67,11 +31,10 @@
                 Mobile:        <br/>
                     <input type="number" class="box" name="mobile"/><br/>
                 Address:       <br/>
-                    <textarea type="address" class="box" value="address" cols="30" rows="10"></textarea><br/>
-                <input type="submit" class="GreenButton" name="submit" value="Submit">
-                <input type="reset" class="RedButton" name="reset" value="Reset"><br/>
+                    <textarea type="address" class="box" value="address" cols="30" rows="10"></textarea><br/> 
+                <input type="button" class="GreenButton" name="submit" value="Submit" onclick="verify()">
+                <input type="button" class="RedButton" name="reset" value="Reset"><br/>
             </form>
         </div>
-       
     </body>
 </html>
