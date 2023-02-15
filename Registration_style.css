@@ -1,0 +1,39 @@
+h1{
+    font-family: 'Oswald Regular';
+    font-weight: bolder;
+}
+form{
+    font-family: 'Oswald Regular';
+    font-weight: 400;
+}
+body{
+    background-color: lightslategrey;
+}
+div{
+    background-color: white;
+    width: 280px;
+    height: 750px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.box{
+    width: 100%;
+}
+.GreenButton{
+    width: 100px;
+    height: 25px;
+    background-color: green;
+    color: white;
+    border: 0;
+}
+.RedButton{
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border: 0;
+}
+.dot{
+    margin: 10px 10px 10px 10px;
+}
